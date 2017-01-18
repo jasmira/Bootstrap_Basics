@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .floated {
+            float: left;
+            background: maroon;
+            color: white;
+            width: 70px;
+            height: 50px;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: #333 0 10px 15px 10px;
+        }
+        
+        .my-clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>clear: clearing element method</p>
+        <div class="floated">floated left</div>
+        <div>uncleared block element</div>
+        <!--<div>hello</div>-->
+        <div class="my-clearfix">
+            <div>
+                <div>cleared block element</div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!--Bootstrap clearfix-->
+    <div class="container">
+        <p>clearfix: clearing element method</p>
+        <div class="floated col-md-6">floated left</div>
+        <div class="col-md-6">uncleared block element</div>
+        <!--<div></div>-->
+        <div class="clearfix"></div>
+        <div class="col-md-6">
+            <div>
+                <div>cleared block element</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

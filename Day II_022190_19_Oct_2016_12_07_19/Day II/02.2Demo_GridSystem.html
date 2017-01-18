@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial scale=1.0, user-scalable=yes">
+    <style>
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            min-height: 300px;
+            background: skyblue;
+            margin-bottom: 10px;
+            color: green;
+        }
+        
+        .demo-content.bg-alt {
+            background: peachpuff;
+            color: maroon;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--
+            <768px - Extra Small devices .col.xs-* - Mobiles
+            >=768px - Small devices .col.sm-* - Tablets
+            >=992px - Medium devices .col.md-* - Desktops
+            >=1200px - Large devices .col.lg-* - Large Desktops
+        -->
+        <!--Row with three equal columns-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content">.col-md-4</div>
+            </div>
+            <div class="col-md-4">
+            	<div class="demo-content bg-alt">.col-md-4</div>
+            </div>
+            <div class="col-md-4">
+            	<div class="demo-content">.col-md-4</div>
+            </div>
+        </div>
+        <hr>
+        <!--Row with three columns divided in 1:4:1 ratio-->
+        <div class="row">
+            <div class="col-md-2">
+            	<div class="demo-content">.col-md-2</div>
+            </div>
+            <div class="col-md-8">
+            	<div class="demo-content bg-alt">.col-md-8</div>
+            </div>
+            <div class="col-md-2">
+            	<div class="demo-content">.col-md-2</div>
+            </div>
+        </div>
+        <hr>
+        <!--Row with three columns divided unevenly-->
+        <div class="row">
+            <div class="col-md-3">
+            	<div class="demo-content">.col-md-3</div>
+            </div>
+            <div class="col-md-7">
+            	<div class="demo-content bg-alt">.col-md-7</div>
+            </div>
+            <div class="col-md-2">
+            	<div class="demo-content">.col-md-2</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

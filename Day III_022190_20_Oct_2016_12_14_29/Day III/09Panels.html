@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Panels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .baseMargin {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baseMargin">
+        <div class="panel panel-default">
+            <div class="panel-body">Look, I'm in a panel!</div>
+        </div>
+        <hr>
+
+        <!--Panels with Heading-->
+        <div class="panel panel-default">
+            <div class="panel-heading">This Page is Disabled</div>
+            <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.<br>
+                <a href="#">Click here</a> to enable the page.</div>
+        </div>
+        <hr>
+
+        <!--headings with h1 and panel-title-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Panel Title</h1>
+            </div>
+            <div class="panel-body">Panel content…</div>
+        </div>
+        <hr>
+
+        <!--Panels with Footer-->
+        <div class="panel panel-default">
+            <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.</div>
+            <div class="panel-footer clearfix">
+                <div class="pull-right">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-default">Go Back</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--Panels with Contextual Text-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">301 Moved Permanently</h3>
+            </div>
+            <div class="panel-body">The requested page has been permanently moved to a new location.</div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">200 OK</h3>
+            </div>
+            <div class="panel-body">The server successfully processed the request.</div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">100 Continue</h3>
+            </div>
+            <div class="panel-body">The client should continue with its request.</div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">400 Bad Request</h3>
+            </div>
+            <div class="panel-body">The request cannot be fulfilled due to bad syntax.</div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">503 Service Unavailable</h3>
+            </div>
+            <div class="panel-body">The server is temporarily unable to handle the request.</div>
+        </div>
+        <hr>
+
+        <!--Placing Tables inside Panels-->
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">User Information</div>
+            <div class="panel-body">
+                <p>The following table contains some personal information about users.</p>
+                <!-- Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Row</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>111</td>
+                            <td>Bruce</td>
+                            <td>Lee</td>
+                            <td>brucelee@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>222</td>
+                            <td>Arnold</td>
+                            <td>Schwarzenegger</td>
+                            <td>arnoldschwarzenegger@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>333</td>
+                            <td>Sylvester</td>
+                            <td>Stallone</td>
+                            <td>sylvesterstallone@mail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        
+        <!--Panels with List Group-->
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Products</div>
+            <div class="panel-body">
+                <p>The following products are currently available on our store.</p>
+            </div>
+            <!-- List group -->
+            <div class="list-group">
+                <a href="#" class="list-group-item">Mobile Phones
+                 <span class="badge">350</span>
+			</a>
+                <a href="#" class="list-group-item">Laptops & Desktops <span class="badge">157</span>
+			</a>
+                <a href="#" class="list-group-item">Tablets <span class="badge">220</span>
+			</a>
+                <a href="#" class="list-group-item">Audio & Video Players <span class="badge">75</span>
+			</a>
+                <a href="#" class="list-group-item">Camera <span class="badge">27</span>
+			</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

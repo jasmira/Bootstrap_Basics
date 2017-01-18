@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activate Bootstrap 3 Carousel via Plugin Methods</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){ 
+	// Initializes the carousel
+    $(".start-slide").click(function(){
+    	$("#myCarousel").carousel('cycle');
+    });
+	// Pause the carousel
+    $(".pause-slide").click(function(){
+    	$("#myCarousel").carousel('pause');
+    });
+	// Cycles to the previous item
+    $(".prev-slide").click(function(){
+    	$("#myCarousel").carousel('prev');
+    });
+	// Cycles to the next item
+    $(".next-slide").click(function(){
+    	$("#myCarousel").carousel('next');
+    });
+	// Cycles the carousel to a particular frame 
+    $(".slide-one").click(function(){
+    	$("#myCarousel").carousel(0);
+    });
+    $(".slide-two").click(function(){
+    	$("#myCarousel").carousel(1);
+    });
+    $(".slide-three").click(function(){
+    	$("#myCarousel").carousel(2);
+    });
+     $(".slide-four").click(function(){
+    	$("#myCarousel").carousel(3);
+    });
+    $(".slide-five").click(function(){
+    	$("#myCarousel").carousel(4);
+    });
+});
+</script>
+    <style type="text/css">
+        .carousel {
+            background: #2f4357;
+            margin: 20px 0;
+        }
+        
+        .carousel .item img {
+            margin: 0 auto;
+            /* Align slide image horizontally center */
+        }
+        
+        .control-buttons {
+            text-align: center;
+        }
+        
+        .baseMargin {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baseMargin">
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/Bruce1.jpg" alt="First Slide">
+                    <div class="carousel-caption">
+                        <h3>First Quote</h3>
+                        <p>"Adapt what is useful, reject what is useless, and add what is specifically your own."– Bruce Lee.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/Bruce2.jpg" alt="Second Slide">
+                    <div class="carousel-caption">
+                        <h3>Second Quote</h3>
+                        <p>“A wise man can learn more from a foolish question than a fool can learn from a wise answer.”– Bruce
+                            Lee.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/Bruce3.jpg" alt="Third Slide">
+                    <div class="carousel-caption">
+                        <h3>Third Quote</h3>
+                        <p>“The key to immortality is first living a life worth remembering.”– Bruce Lee.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/Bruce4.jpg" alt="Fourth Slide">
+                    <div class="carousel-caption">
+                        <h3>Fourth Quote</h3>
+                        <p>“Take things as they are. Punch when you have to punch. Kick when you have to kick.”– Bruce Lee.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/Bruce5.jpg" alt="Fifth Slide">
+                    <div class="carousel-caption">
+                        <h3>Fifth Quote</h3>
+                        <p>"As you think, so shall you become."– Bruce Lee.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel controls buttons -->
+            <div class="control-buttons">
+                <input type="button" class="btn btn-info start-slide" value="Start">
+                <input type="button" class="btn btn-info pause-slide" value="Pause">
+                <input type="button" class="btn btn-info prev-slide" value="Previous Slide">
+                <input type="button" class="btn btn-info next-slide" value="Next Slide">
+                <input type="button" class="btn btn-info slide-one" value="Slide 1">
+                <input type="button" class="btn btn-info slide-two" value="Slide 2">
+                <input type="button" class="btn btn-info slide-three" value="Slide 3">
+                <input type="button" class="btn btn-info slide-four" value="Slide 4">
+                <input type="button" class="btn btn-info slide-five" value="Slide 5">
+            </div>
+        </div>
+</body>
+
+</html>

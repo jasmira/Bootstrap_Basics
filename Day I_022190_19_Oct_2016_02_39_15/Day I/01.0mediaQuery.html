@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        /*@media screen {
+            h1,
+            p {
+                font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;
+                font-size: 14px;
+                color: red;
+            }
+        }
+        
+        @media print {
+            h1,
+            p {
+                font-family: 'Comic Sans MS', cursive;
+                font-size: 18px;
+                font-weight: bold;
+                color: blue;
+            }
+        }
+        
+        body {
+            background-color: green;
+        }
+       
+        @media only screen and (orientation: landscape) {
+            body {
+                background-color: yellow;
+            }
+        } */
+        
+        #element {
+            border: solid 3px black;
+        }
+        
+        .wrapper {
+            border: solid 3px gray;
+            padding: 5px 10px;
+            margin: 40px;
+        }
+        
+        .viewing-area span {
+            color: gray;
+            display: none;
+        }
+        
+        @media screen and (max-width:400px) {
+            #element {
+                border: none;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            .one {
+                background: pink;
+            }
+            span.lt600 {
+                display: inline-block;
+            }
+        }
+        
+        @media screen and (min-width:900px) {
+            .two {
+                background: orange;
+            }
+            span.gt900 {
+                display: inline-block;
+            }
+        }
+        
+        @media screen and (min-width:600px) and (max-width:900px) {
+            .three {
+                background: skyblue;
+            }
+            span.bt600-900 {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--<div>
+            <h1>Heading</h1>
+            <p>This is just to check media query!</p>
+        </div>-->
+    <div id="element">
+        This element has a border, when the window width is 400px the border will disappear.
+    </div>
+    <div class="wrapper one">
+        This box will turn to pink if the viewing area is less than 600px
+    </div>
+    <div class="wrapper two">
+        This box will turn to orange if the viewing area is greater than 900px
+    </div>
+    <div class="wrapper three">
+        This box will turn to skyblue if the viewing area is between 600px and 900px
+    </div>
+    <div class="viewing-area">
+        <strong>Your current viewing area is </strong>
+        <span class="lt600">less than 600px</span>
+        <span class="bt600-900">between 600px to 900px</span>
+        <span class="gt900">greater than 900px</span>
+    </div>
+</body>
+
+</html>

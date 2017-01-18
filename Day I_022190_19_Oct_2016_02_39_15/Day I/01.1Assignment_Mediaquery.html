@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li a {
+            color: green;
+            padding: 3px;
+            display: block;
+        }
+        
+        @media screen and (min-width: 520px) and (max-width: 699px)  {
+            ul li a {
+                padding-left: 30px;
+                background: url(./images/email-icon.png) left center no-repeat;
+            }
+        }
+        
+        @media screen and (min-width: 700px) and (max-width: 1000px) {
+            ul li a:before {
+                content: "Email: ";
+                font-style: italic;
+                color: #666666;
+            }
+        }
+        
+        @media screen and (min-width: 1001px) {
+            ul li a:after {
+                content: " (" attr(data-email) ")";
+                font-size: 12px;
+                font-style: italic;
+                color: #666666;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a data-email="abhijeet_gole@persistent.com"
+         href="mailto:abhijeet_gole@persistent.com">Abhijeet Gole</a></li>
+        <li><a data-email="sachin_tendulkar@cricket.com" 
+        href="mailto:sachin_tendulkar@cricket.com">Sachin Tendulkar</a></li>
+        <li><a data-email="leander_paes@tennis.com" 
+        href="mailto:leander_paes@tennis.com">Leander Paes</a></li>
+    </ul>
+</body>
+
+</html>

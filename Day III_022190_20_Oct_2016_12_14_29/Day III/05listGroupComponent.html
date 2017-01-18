@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 ListGroup Component</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .baseMargin {
+            margin: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baseMargin">
+        <!--Simple unordered list-->
+        <h3>Music</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Classical</li>
+            <li class="list-group-item">Jazz</li>
+            <li class="list-group-item">Rock</li>
+            <li class="list-group-item">Folk Songs</li>
+        </ul>
+    </div>
+    <!--List group with linked items without list only with hyperlinks-->
+    <div class="baseMargin">
+        <div class="list-group">
+            <h3>Music</h3>
+            <a href="#" class="list-group-item active">
+                <span class="glyphicon glyphicon-music"></span> 
+                Classical <span class="badge">225</span>
+            </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-music"></span> 
+                Jazz <span class="badge">48</span>
+            </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-music"></span> 
+                Rock <span class="badge">170</span>
+            </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-music"></span> 
+                Folk Songs <span class="badge">223</span>
+            </a>
+        </div>
+    </div>
+     <div class="baseMargin">
+        <ul class="list-group" >
+            <li class="list-group-item list-group-item-success">
+                200 OK: The server successfully processed the request.</li>
+            <li class="list-group-item list-group-item-info">
+                100 Continue: The client should continue with its request.</li>
+            <li class="list-group-item list-group-item-warning">
+                503 Service Unavailable: The server is temporarily unable to handle the request.</li>
+            <li class="list-group-item list-group-item-danger">
+                400 Bad Request: The request cannot be fulfilled due to bad syntax.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
